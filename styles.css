@@ -242,10 +242,9 @@ li::before {
 
 .ReviewsContainer {
   display: grid;
-  align-items: center;
+  grid-template-columns: 400px 400px 400px;
   align-self: center;
   justify-content: center;
-  grid-template-columns: repeat(3, minmax(10%, 1fr));
   gap: 10%;
   margin: 0 auto;
 }
@@ -332,7 +331,7 @@ li::before {
   background-color: #258dc6;
   color: white;
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 2%;
 }
@@ -416,7 +415,8 @@ li::before {
 
 .PlumberHeadshot {
   margin: 0% 25%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border: 3px solid #258dc6;
 }
 
@@ -465,7 +465,7 @@ li::before {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 650px) {
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -734,16 +734,16 @@ li::before {
   }
 
   .PageThreeTitle h1 {
-    font-size: 5rem;
+    font-size: 10vw;
   }
 
   .PageThreeContent {
     align-items: center;
     justify-content: center;
-    grid-template-columns: 400px;
+    grid-template-columns: 21rem;
     margin: 1rem auto;
     gap: 2%;
-    width: 90%;
+    width: 100%;
     height: fit-content;
   }
 
@@ -757,7 +757,7 @@ li::before {
 
   .PlumberOne h4,
   .PlumberTwo h4,
-  .PlumberThree h3 {
+  .PlumberThree h4 {
     text-align: center;
     font-size: 1.5rem;
     text-align: center;
