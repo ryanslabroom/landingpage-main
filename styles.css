@@ -549,6 +549,7 @@ li::before {
     padding: 0 5%;
     font-weight: 600;
     text-shadow: black 3px 3px;
+    line-height: 1.5rem;
   }
 
   .BotContactForm {
@@ -788,7 +789,7 @@ li::before {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-
+line-height: 1.5rem;
     font-size: 1rem;
   }
 
