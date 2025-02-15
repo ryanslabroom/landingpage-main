@@ -134,6 +134,7 @@ body {
   box-sizing: border-box;
   padding: 0.9375rem 3.125rem;
   margin-bottom: 10px;
+  gap: 5%;
 }
 
 .ContactForm h1,
@@ -159,6 +160,7 @@ body {
   box-sizing: border-box;
   padding: 0.9375rem 3.125rem;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 #Submission {
@@ -686,6 +688,7 @@ li::before {
   .ReviewTwo .ReviewDescription,
   .ReviewThree .ReviewDescription {
     font-size: 1.5rem;
+    font-weight: 500;
   }
 
   .ReviewOne,
@@ -699,6 +702,7 @@ li::before {
 
   .ReviewName {
     font-size: 2rem;
+    font-weight: 400;
   }
 
   .anchorButton {
