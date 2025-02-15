@@ -662,10 +662,6 @@ li::before {
     display: none;
   }
 
-  .PageThreeTitle {
-    margin-top: 0%;
-  }
-
   .PageTwoTitle {
     color: white;
     font-size: 2rem;
@@ -733,7 +729,12 @@ li::before {
   }
 
   .PageThreeTitle {
+    margin-top: 0%;
     margin-bottom: 5rem;
+  }
+
+  .PageThreeTitle h1 {
+    font-size: 5rem;
   }
 
   .PageThreeContent {
