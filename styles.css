@@ -56,6 +56,7 @@ body {
   width: 100%;
   margin-bottom: 0.8rem;
   text-shadow: black 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .PageOne {
@@ -77,13 +78,15 @@ body {
 .Mainheader {
   margin-bottom: 1%;
   font-size: 4rem;
-  text-shadow: black 2px 2px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .Subheader {
   margin-top: 0.16rem;
   font-size: 2rem;
-  text-shadow: black 2px 2px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .ContactForm {
@@ -174,7 +177,7 @@ li::before {
   width: 100%;
   font-size: 2rem;
   list-style: none;
-  text-shadow: black 2px 2px;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .Awards {
@@ -233,6 +236,8 @@ li::before {
   margin-left: 8vw;
   margin-top: 0rem;
   text-shadow: black 2px 2px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .ReviewsContainer {
@@ -319,9 +324,6 @@ li::before {
 
   cursor: pointer;
 }
-
-
-
 
 .PageThreeTitle {
   display: flex;
@@ -413,8 +415,8 @@ li::before {
 }
 
 .PlumberHeadshot {
-  margin-top: 5%;
-  width: 80%;
+  margin: 0% 25%;
+  width: 100%;
   border: 3px solid #258dc6;
 }
 
@@ -449,11 +451,9 @@ li::before {
   width: 25%;
 }
 
-
 .footimg {
   margin-top: 1rem;
   width: 10%;
-
 }
 
 /* Custom, iPhone Retina */
@@ -461,7 +461,6 @@ li::before {
   .ReviewsContainer {
     grid-template-columns: repeat(1, minmax(10%, 1fr));
     gap: 10%;
-    
   }
 }
 
@@ -469,24 +468,24 @@ li::before {
 @media only screen and (max-width: 480px) {
 }
 
-
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
 
-@media (min-width:250px) and (max-width: 768px) {
+@media (min-width: 250px) and (max-width: 768px) {
   html,
   body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
+
   .Navigation {
-    flex-direction: column; 
-    align-items: flex-start; 
-   
+    flex-direction: column;
+    align-items: flex-start;
+
     width: 100%;
     margin: 1rem auto;
   }
@@ -497,102 +496,119 @@ li::before {
   }
 
   .NavHeadliner {
-    font-size: 1rem; 
+    font-size: 1rem;
     margin: 1rem auto;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 0;
   }
 
   .ButtonContainer {
-    width: 100%; 
-    justify-content: center; 
-    flex-direction: column; 
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
     gap: 1rem;
   }
 
   .ButtonContainer h3 {
-    margin: .1rem auto;
+    margin: 0.1rem auto;
   }
 
   .NavButton {
     margin-top: 0;
-    width: 20rem; 
-    height: 4rem; 
-    font-size: 1.3rem; 
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.3rem;
   }
 
   .PageOne {
-    background-size: cover; 
+    background-size: cover;
+    background-image: url("HeroIMG.png");
     width: 100%;
     margin: 1rem auto;
   }
 
-  .PageOneTitles {
-    flex-direction: column;
-    max-width: 90%; 
-    margin-left: 0;
-    text-align: center; 
+  .AwardIMG,
+  .AwardIMGBig,
+  .AwardIMGSmall,
+  .AwardIMG {
+    display: none;
   }
 
-.PageOneList {
+  .Awards {
+    height: 1.5rem;
+  }
 
-  padding: 0 5%;
-}
+  .PageOneTitles {
+    flex-direction: column;
+    max-width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
 
-.BotContactForm {
-  width: 50%;
-}
+  .PageOneList {
+    padding: 0 5%;
+    font-weight: 600;
+    text-shadow: black 3px 3px;
+  }
+
+  .BotContactForm {
+    width: 50%;
+    border-radius: 1%;
+  }
 
   .ContactForm h1,
-.BotContactForm h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #08439d;
-  margin-top: 0.32rem;
-  font-weight: 500;
-}
+  .BotContactForm h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #08439d;
+    margin-top: 0.32rem;
+    font-weight: 700;
+  }
+
+  .BotContactForm {
+    width: 75%;
+  }
 
   .ContactForm p,
-.BotContactForm p {
-  text-align: center;
-  font-size: .8rem;
-  color: #258dc6;
-  margin-top: 0.32rem;
-  font-weight: 500;
-}
+  .BotContactForm p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #258dc6;
+    margin-top: 0.32rem;
+    font-weight: 500;
+  }
 
-.ContactForm form input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.9375rem .125rem;
-  margin-bottom: 5px;
-}
+  .ContactForm form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9375rem 0.125rem;
+    margin-bottom: 5px;
+  }
 
-.BotContactForm form input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0.9375rem 0;
-  margin-bottom: 0px;
-}
-  
-#Submission {
-  color: white;
-  font-size: 1rem;
-  border: 0;
-  background-color: #258dc6;
-  cursor: pointer;
-}
+  .BotContactForm form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9375rem 0;
+    margin-bottom: 0px;
+  }
 
+  #Submission {
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    background-color: #258dc6;
+    cursor: pointer;
+  }
 
   .Mainheader {
     text-align: center;
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   .Subheader {
     text-align: center;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin-top: 0;
   }
 
@@ -602,38 +618,48 @@ li::before {
   }
 
   .ContactForm {
-    position: relative; 
-    bottom: 0; 
-    right: 0; 
-    margin: 0 auto; 
-    width: 50%; 
-    padding: .5rem;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 75%;
+    padding: 0.5rem;
+    border-radius: 1%;
   }
-
-
-
 
   .PageTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
-  
+
+  .Fivestars {
+    width: 30%;
+  }
+
   .ReviewCount {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     color: white;
     font-size: 1rem;
     margin: 0 auto;
     width: 100%;
-    
   }
 
   .Rating {
     margin: 0%;
   }
 
-  .PageThree{
+  .PageThree {
     margin-top: 0%;
+  }
+
+  .contactNOW {
+    display: none;
   }
 
   .PageThreeTitle {
@@ -647,17 +673,19 @@ li::before {
     width: 100%;
     margin: 1rem 0rem;
   }
-  
+
   .ReviewsContainer {
     grid-template-columns: repeat(1, 1fr);
-    margin:  1.5rem;
+    margin: 1.5rem;
     gap: 5%;
     width: 90%;
     height: fit-content;
     align-items: center;
     justify-content: center;
   }
-  .ReviewOne .ReviewDescription, .ReviewTwo .ReviewDescription, .ReviewThree .ReviewDescription{
+  .ReviewOne .ReviewDescription,
+  .ReviewTwo .ReviewDescription,
+  .ReviewThree .ReviewDescription {
     font-size: 1.5rem;
   }
 
@@ -670,38 +698,43 @@ li::before {
     align-items: center;
   }
 
-
-.ReviewName {
-  font-size: 2rem; 
-}
-
-  
+  .ReviewName {
+    font-size: 2rem;
+  }
 
   .anchorButton {
     background-color: #258dc6;
     color: white;
     text-decoration: none;
     border-radius: 0.8rem;
-    padding: 2rem 2rem; 
-    font-size: 2rem; 
+    padding: 2rem 2rem;
+    font-size: 2rem;
     font-weight: bold;
     border: none;
-   
-    max-width: 400px; 
+
+    max-width: 400px;
     text-shadow: 1px 1px black;
     cursor: pointer;
-  
-    line-height: 2rem; 
+
+    line-height: 2rem;
     margin: 5rem auto;
-}
+  }
 
-.anchorButton .br {
-  display: none;
-}
+  .anchorButton .br {
+    display: none;
+  }
 
-.FBIcon {
-  width: 5%;
-}
+  .FBIcon {
+    width: 5%;
+  }
+
+  .PageFour {
+    display: none;
+  }
+
+  .PageThreeTitle {
+    margin-bottom: 5rem;
+  }
 
   .PageThreeContent {
     align-items: center;
@@ -712,25 +745,34 @@ li::before {
     width: 90%;
     height: fit-content;
   }
-  
-.anchorButton {
-  margin-top: 10rem;
-}
 
+  .anchorButton {
+    margin-top: 10rem;
+  }
 
-  .PlumberOne h4, .PlumberTwo h4, .PlumberThree h3 {
+  .mainlogo {
+    width: 45%;
+  }
+
+  .PlumberOne h4,
+  .PlumberTwo h4,
+  .PlumberThree h3 {
     text-align: center;
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .PlumberOne h4, .PlumberTwo h4, .PlumberThree h4 {
+  .PlumberOne h4,
+  .PlumberTwo h4,
+  .PlumberThree h4 {
     text-align: center;
     font-size: 1.5rem;
     text-align: center;
   }
 
-  .PlumberOne p, .PlumberTwo p, .PlumberThree p {
+  .PlumberOne p,
+  .PlumberTwo p,
+  .PlumberThree p {
     font-size: 1.5rem;
     text-align: center;
     margin: 5%;
@@ -756,18 +798,12 @@ li::before {
   .FootDecor .ButtonContainer {
     display: none;
   }
-  
+
   .footimg {
     margin-top: 1rem;
     width: 40%;
-  
   }
-
 }
-
-
-
- 
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
