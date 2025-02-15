@@ -549,7 +549,7 @@ li::before {
     padding: 0 5%;
     font-weight: 600;
     text-shadow: black 3px 3px;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   .BotContactForm {
@@ -616,6 +616,8 @@ li::before {
   .PageOneList {
     margin-top: 1%;
     text-align: left;
+    line-height: 15vw;
+    font-size: 6vw;
   }
 
   .ContactForm {
@@ -789,8 +791,9 @@ li::before {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    line-height: 2rem;
+
     font-size: 1rem;
+    line-height: 8vw;
   }
 
   .PageFour h1 {
