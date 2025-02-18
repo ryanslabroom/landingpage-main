@@ -474,7 +474,7 @@ li::before {
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
 
-@media (min-width: 250px) and (max-width: 768px) {
+@media (min-width: 250px) and (max-width: 1366px) {
   html,
   body {
     width: 100%;
@@ -814,10 +814,6 @@ li::before {
   }
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust styles for landscape mode */
 }
