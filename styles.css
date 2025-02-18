@@ -59,6 +59,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+.NavButton:hover {
+  transform: translateY(-2px);
+  background-color: #37a7e4;
+}
+
 .PageOne {
   background-image: url("HeroIMG.png");
   background-position: center;
@@ -123,6 +128,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+#Submission:hover {
+  transform: translateY(-2px);
+  box-shadow: rgb(255, 255, 255) 2px 1px;
+  background-color: #37a7e4;
 }
 
 .BotContactForm form {
@@ -285,6 +296,18 @@ li::before {
   box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
   border-radius: 5px;
   font-weight: bold;
+
+  display: flex; /* Use flexbox within each box */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  border: 1px solid #000000; /* Optional, for styling */
+}
+
+.ReviewOne:hover,
+.ReviewTwo:hover,
+.ReviewThree:hover {
+  transform: translateY(-4px);
 }
 
 .ReviewButton {
@@ -324,6 +347,11 @@ li::before {
   text-shadow: black 1px 1px;
 
   cursor: pointer;
+}
+
+.anchorButton:hover {
+  transform: translateY(-2px);
+  background-color: #37a7e4;
 }
 
 .PageThreeTitle {
@@ -384,6 +412,12 @@ li::before {
   border-radius: 1%;
   padding: 1.25rem;
   box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+}
+
+.PlumberOne:hover,
+.PlumberTwo:hover,
+.PlumberThree:hover {
+  transform: translateY(-2px);
 }
 
 .PlumberOne h3,
@@ -450,7 +484,7 @@ li::before {
 }
 
 .FBIcon {
-  width: 25%;
+  width: 20%;
 }
 
 .footimg {
@@ -787,7 +821,7 @@ li::before {
   }
 
   .GReview {
-    align-self: flex-end;
+    align-self: end;
   }
 
   .FootDecor {
@@ -814,6 +848,34 @@ li::before {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Adjust styles for landscape mode */
+@media (min-width: 2560px) {
+  .ContactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+
+    position: absolute;
+    bottom: 21vw;
+    right: 17vw;
+
+    padding: 1.25rem;
+    width: 15vw;
+  }
+}
+
+@media (min-width: 3840px) {
+  .ContactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+
+    position: absolute;
+    bottom: 35vw;
+    right: 17vw;
+
+    padding: 1.25rem;
+    width: 15vw;
+  }
 }
