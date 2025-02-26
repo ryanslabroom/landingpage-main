@@ -24,7 +24,7 @@
       <h3 class="NavHeadliner">#1 Rated Drain Cleaning Team in Trinity, FL</h3>
       <div class="ButtonContainer">
         <h3>SAME DAY SERVICE!</h3>
-        <a class="NavButton" href="tel:7278424663">CALL NOW <br></br>727-842-4663</a>
+        <a class="NavButton" href="tel:7278424663" onclick="return gtag_report_conversion(this.href);">CALL NOW <br></br>727-842-4663</a>
       </div>
     </nav>
   </header>
@@ -98,7 +98,7 @@
           <img class="GReview" src="assets\images\GoogleLogo.png">
         </div>
       </div>
-        <a href="https://book.housecallpro.com/book/Farrell-Plumbing/9e3158d4a33b4c888c6460f41780ec01?v2=true&attr=2677" target="_blank" class="anchorButton" >BOOK ONLINE NOW IN 7 SECONDS</a>
+        <a href="https://book.housecallpro.com/book/Farrell-Plumbing/9e3158d4a33b4c888c6460f41780ec01?v2=true&attr=2677" target="_blank" class="anchorButton" onclick="return gtag_report_conversion(this.href);">BOOK ONLINE NOW IN 7 SECONDS</a>
       </div>
       
       <div class="PageThree">
@@ -128,7 +128,7 @@
           </div>
         </div>
       </div>
-      <a class="anchorButton" href="tel:7278424663">CALL NOW <br class="br"></br>727-842-4663</a>
+      <a class="anchorButton" href="tel:7278424663"onclick="return gtag_report_conversion(this.href);">CALL NOW <br class="br"></br>727-842-4663</a>
     
       <div class="PageFour">
           <h1 class="contactNOW">CONTACT US NOW</h1>
@@ -145,7 +145,7 @@
             <input id="ContactEmail" type="email" name="Email" placeholder="Email*" required>
             <input id="ContactPhone" type="tel" name="Telephone" placeholder="Phone Number*" required>
             <input id="ContactMessage" type="text" name="Message" placeholder="Message*" required>
-            <input id="Submission" type="submit" required>
+            <input id="Submission" type="submit" onsubmit="return gtag_report_conversion();" required>
           </form>
           
       </div>
@@ -163,5 +163,23 @@
 
         
 <script type="text/javascript" src="//cdn.callrail.com/companies/792068496/d63703c7a696ac368dde/12/swap.js"></script> 
+<!-- Event snippet for DrainCleaningButtonClick conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-696165012/6GKhCP_lqqMaEJTF-ssC',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   </body>
 </html>
